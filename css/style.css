@@ -1,0 +1,300 @@
+@import url('responsive.css');
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;;
+	color: #291f1a;
+}
+
+.green {
+	color: #1ac056;
+	font-weight: 400;
+}
+
+a {
+	color: #1ac056;
+	text-decoration: none;
+}
+
+h2 {
+	font-weight: 100;
+	margin-bottom: 50px;
+	margin-top: 20px;
+}
+
+h3 {
+	font-size: 22px; 
+	font-weight: 400;
+}
+
+h4 {
+	font-size: 18px; 
+	font-weight: 400;
+}
+
+section {
+	background-color: #f9fcfe;
+	padding: 3%;
+	text-align: center;
+}
+
+#main-nav {
+	transition: all 0.5s;
+}
+
+#main-nav ul li {
+	font-size: 18px;
+	margin: 0 15px;
+}
+
+#main-nav ul li a {
+	color: #ffffff;
+}
+
+#main-nav ul li a:hover {
+	color: #1ac056;
+}
+
+#main-header {
+	background-image: url('../images/img/header-background.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+#main-header h1, #main-header h2 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	color: #efefef;
+}
+
+#main-header h1 {
+	font-size: 82px;
+}
+
+#main-header h2 {
+	font-size: 32px;
+}
+
+#about-me {
+	background-color: #f9fcfe;
+}
+
+
+#about-me figure img {
+	width: 50%;
+	border: 10px solid #c6c4c4;
+	border-radius: 10px;
+}
+
+#about-me p {
+	text-align: left;
+	
+}
+
+#skills .skills-icons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#skills .skills-icons figure {
+	margin: 40px 30px;
+}
+
+#skills figcaption {
+	text-transform: uppercase;
+	margin-top: 10px;
+	
+}
+
+#portfolio .project {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+
+}
+
+#portfolio .project1 {
+	background-image: url('../images/img/portfolio1.jpg');
+}
+
+#portfolio .project2 {
+	background-image: url('../images/img/portfolio2.jpg');
+}
+
+#portfolio .project3 {
+	background-image: url('../images/img/portfolio3.jpg');
+}
+
+#portfolio .project .overlay {
+	background-color: rgba(66, 66, 66, 0.8);
+	padding: 3%;
+	height: auto;
+	cursor: pointer;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+#portfolio .project:hover .overlay {
+	opacity: 1;
+}
+
+#portfolio .project .mask {
+	font-weight: 100;
+	height: 100%;
+	padding: 8%;
+	color: #efefef;
+	border: 1px solid #ffffff;
+}
+
+#contact {
+	background-color: #213b50;
+	color: #ffffff;
+	text-align: left;
+}
+
+#contact .info-contact, #contact form {
+	height: 300px;
+}
+
+#contact .info-contact {
+	line-height: 2;
+}
+
+.socials {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 40px; 
+}
+
+.socials a{
+	line-height: 40px;
+	width: 40px;
+	margin-right: 30px;
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	font-size: 20px;
+	transition: all 0.4s;
+}
+
+.socials a:hover {
+	background-color: #fff;
+	color: #213b50;
+}
+
+
+
+#contact form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 50px;
+	
+}
+
+
+
+#contact input:not([type="submit"]), #contact textarea {
+	background-color: #2b4a64;
+	color: #efefef;
+	font-size: 14px;
+	padding: 15px;
+	border: 1px solid transparent;
+	outline: none;
+	
+}
+
+#contact form input:focus, #contact form textarea:focus{
+	box-shadow: inset 0 0 2px 1px #1ac056;
+}
+
+::placeholder {
+	color: #aaaaaa;
+}
+
+#contact form input[type="submit"] {
+	color: #efefef;
+	text-transform: uppercase;
+	background-color: #1ac056;
+	border: 2px solid #efefef;
+	width: 25%;
+	line-height: 40px;
+	align-self: flex-end;
+}
+
+#contact form input[type="submit"]:hover {
+	cursor: pointer;
+	background-color: #0e9f42;
+	
+}
+
+#footer {
+	background-color: #142634;
+	line-height: 30px;
+	color: #efefef;
+	padding: 10px 50px;
+	
+}
+
+#footer p {
+	margin: 0;
+}
+
+.scrolled {
+	background-color: rgba(26, 192, 86, 0.9);
+	
+}
+
+#main-nav.scrolled ul li a:hover, #main-nav.activated ul li a:hover {
+	background-color: #ffffff;
+	border-radius: 3px;
+}
+
+@media all and (max-width: 991px) {
+	
+	.navbar-toggler {
+		background-color:  rgba(26, 192, 86, 0.9);
+	}
+	
+	#main-nav.scrolled {
+		background-color: transparent;
+	}
+	
+	#main-nav.activated {
+		background-color: rgba(26, 192, 86, 0.9);
+	}
+	
+	#main-nav.activated ul li a:hover {
+		background-color: #ffffff;	
+		width: 100%;
+	}
+	
+	#portfolio .project{
+		margin-bottom: 5%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

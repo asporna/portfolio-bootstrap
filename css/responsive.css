@@ -1,0 +1,69 @@
+@media all and (max-width: 767px) {
+	
+	#main-header h1 {
+		font-size: 58px;
+	}
+	
+	#main-header h2 {
+		font-size: 22px;
+	}
+	
+
+	#about-me p {
+		text-align: center;
+	}
+	
+	#contact .info-contact {
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	
+	#contact .info-contact .socials  {
+		justify-content: center;
+	}
+	
+	#contact .info-contact .socials a {
+		margin: 0 15px;
+	}
+	
+	#contact form input[type="submit"] {
+		margin: 0 auto;
+	}
+	
+	#footer {
+		text-align: center;
+	}
+	
+}
+
+
+@media all and (max-width: 424px) {
+	html {
+		font-size: 14px;
+	}
+	
+	section {
+		padding: 1%;
+	}
+	
+	h2 {
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	
+	#main-header h1 {
+		font-size: 36px;
+	}
+	
+	#main-header h2 {
+		font-size: 18px;
+	}
+	
+	#contact form input[type="submit"] {
+		font-size: 12px;
+	}
+	
+	#contact .info-contact {
+		margin: 0;
+	}
+}
